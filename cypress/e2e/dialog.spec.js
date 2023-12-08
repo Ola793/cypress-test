@@ -10,7 +10,7 @@ describe('Cypress first ui tests', () => {
   it('popover check', () => {
     cy.log('dialog return check')
     cy.get('.result-from-dialog button.appearance-filled.size-medium.status-primary.shape-rectangle.transitions:last-of-type').click()
-    cy.get('input.size-medium.shape-rectangle').click().type('Olya').as('name')
+    cy.get('input.size-medium.shape-rectangle').click().type('Olya')
     cy.get('button.appearance-filled.size-medium.status-success.shape-rectangle.transitions').click()
     cy.get('.result-from-dialog li.ng-star-inserted').should('exist').should('contain', name)
   })
