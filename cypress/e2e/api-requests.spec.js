@@ -14,7 +14,7 @@ describe('API login', () => {
     })
   })
 
-  it.only('POST request', () => {
+  it('POST request', () => {
     cy.request('POST', '/posts', {
       title: 'Lorem',
       body: 'Ipsum',
