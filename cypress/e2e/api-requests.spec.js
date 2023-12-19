@@ -49,7 +49,7 @@ describe('API login', () => {
     })
   })
 
-  it.only('DELETE request', () => {
+  it('DELETE request', () => {
     cy.request('DELETE', '/posts/id').then(res => {
       cy.log(res)
       expect(res.status).to.eq(200)
