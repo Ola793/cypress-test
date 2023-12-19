@@ -7,7 +7,7 @@ describe('API login', () => {
     cy.visit('https://jsonplaceholder.typicode.com/')
   })
 
-  it.only('GET request', () => {
+  it('GET request', () => {
     cy.request('/posts').then(res => {
       cy.log(res)
       expect(res.status).to.eq(200)
