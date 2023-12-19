@@ -27,7 +27,7 @@ describe('API login', () => {
     })
   })
 
-  it.only('PUT request', () => {
+  it('PUT request', () => {
     cy.request('PUT', '/posts/100', {
       title: 'Dolor',
       body: 'Sit amet',
