@@ -39,7 +39,7 @@ describe('API login', () => {
     })
   })
 
-  it.only('PATCH request', () => {
+  it('PATCH request', () => {
     cy.request('PATCH', '/posts/id', {
       userId: 333,
     }).then(res => {
