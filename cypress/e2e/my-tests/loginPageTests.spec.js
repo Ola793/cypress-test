@@ -1,6 +1,6 @@
 /// <reference types = "cypress" />
 
-import { LoginPage } from "../pages/login.page"
+import { LoginPage } from "../../pages/login.page"
 
 describe('login page check', () => {
   const validEmail = 'test@test.com';

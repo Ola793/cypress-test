@@ -41,5 +41,10 @@ testem.log
 Thumbs.db
 
 # Cypress
+cypress/results/
 cypress/videos/
 cypress/screenshots/
+
+# Reports
+/mochawesome-report
+/mochawesome.json

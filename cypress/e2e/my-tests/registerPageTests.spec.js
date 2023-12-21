@@ -1,6 +1,6 @@
 /// <reference types = "cypress" />
 
-import { RegisterPage } from "../pages/register.page";
+import { RegisterPage } from "../../pages/register.page";
 
 describe('register page check', () => {
   const name = 'New User';
