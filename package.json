@@ -29,7 +29,7 @@
     "docs:serve": "compodoc -p src/tsconfig.app.json -d docs -s",
     "prepush": "npm run lint:ci",
     "release:changelog": "npm run conventional-changelog -- -p angular -i CHANGELOG.md -s",
-    "cy:open": "npx cypress open ",
+    "cy:open": "npx cypress open",
     "cy:run": "npx cypress run",
     "cy:my-tests": "npx cypress run -s 'cypress/e2e/my-tests/*' --browser chrome",
     "reports:merge": "npx mochawesome-merge 'cypress/results/*.json' -o mochawesome.json",
