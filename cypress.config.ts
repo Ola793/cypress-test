@@ -16,6 +16,7 @@ export default defineConfig({
   defaultCommandTimeout: 5000,   // default 4000
   requestTimeout: 10000,         // default 5000
   responseTimeout: 30000,         // default 30000
+  projectId: "6eyh7y",
   reporter: 'mochawesome',
   reporterOptions: {
     reportDir: 'cypress/results',
