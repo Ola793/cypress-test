@@ -5,7 +5,7 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    // baseUrl: 'http://localhost:4200',
+    baseUrl: 'http://localhost:4200',
     specPattern: 'cypress/e2e/**/*.spec.{js,jsx,ts,tsx}'
   },
   screenshotOnRunFailure: true,   // default true
@@ -16,6 +16,14 @@ export default defineConfig({
   defaultCommandTimeout: 5000,   // default 4000
   requestTimeout: 10000,         // default 5000
   responseTimeout: 30000,         // default 30000
+  projectId: "6eyh7y",
+  reporter: 'mochawesome',
+  reporterOptions: {
+    reportDir: 'cypress/results',
+    overwrite: false,
+    html: false,
+    json: true,
+  },
   // watchForFileChanges: false,
   env: {
     password: process.env.PASS

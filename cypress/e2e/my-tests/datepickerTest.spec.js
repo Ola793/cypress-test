@@ -1,6 +1,6 @@
 /// <reference types = "cypress" />
 import moment from "moment"
-import { DatePickerPage } from "../pages/datepicker.page";
+import { DatePickerPage } from "../../pages/datepicker.page";
 
 describe('register page check', () => {
   const datePickerPage = new DatePickerPage();

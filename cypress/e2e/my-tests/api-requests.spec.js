@@ -7,15 +7,15 @@ describe('API login', () => {
     cy.visit('https://jsonplaceholder.typicode.com/')
   })
 
-  it('GET request', () => {
-    cy.request('/posts').then(res => {
+  it.only('GET request', () => {
+    cy.request('https://jsonplaceholder.typicode.com/posts').then(res => {
       cy.log(res)
       expect(res.status).to.eq(200)
     })
   })
 
-  it('POST request', () => {
-    cy.request('POST', '/posts', {
+  it.only('POST request', () => {
+    cy.request('POST', 'https://jsonplaceholder.typicode.com/posts', {
       title: 'Lorem',
       body: 'Ipsum',
       userId: 777,
@@ -27,8 +27,8 @@ describe('API login', () => {
     })
   })
 
-  it('PUT request', () => {
-    cy.request('PUT', '/posts/100', {
+  it.only('PUT request', () => {
+    cy.request('PUT', 'https://jsonplaceholder.typicode.com/posts/100', {
       title: 'Dolor',
       body: 'Sit amet',
       userId: 777,
@@ -39,8 +39,8 @@ describe('API login', () => {
     })
   })
 
-  it('PATCH request', () => {
-    cy.request('PATCH', '/posts/id', {
+  it.only('PATCH request', () => {
+    cy.request('PATCH', 'https://jsonplaceholder.typicode.com/posts/id', {
       userId: 333,
     }).then(res => {
       cy.log(res)
@@ -49,8 +49,8 @@ describe('API login', () => {
     })
   })
 
-  it('DELETE request', () => {
-    cy.request('DELETE', '/posts/id').then(res => {
+  it.only('DELETE request', () => {
+    cy.request('DELETE', 'https://jsonplaceholder.typicode.com/posts/id').then(res => {
       cy.log(res)
       expect(res.status).to.eq(200)
       cy.log(id)
